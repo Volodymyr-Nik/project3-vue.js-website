@@ -1,0 +1,183 @@
+main {
+      background: #01000A;
+}
+
+.image-slider .swiper-pagination-progressbar-fill {
+    background: #E8A562;
+}
+
+.swiper-bg {
+    position: relative;
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    .stage {
+        max-width: 600px;
+        max-height: 200px;
+        margin-left: 20%;
+        margin-top: -40%;
+        z-index: 3;
+        position: absolute;
+        p {
+            font-weight: 700;
+            font-size: 65px;
+            line-height: 115px;
+        }
+    }
+}
+
+@include media-screen-tablet {
+    .swiper-bg .stage p {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 100px;
+    }
+}
+@include media-screen-small {
+    .swiper-bg .stage p {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 70px;
+    }
+}
+@include media-screen-xs {
+    .swiper-bg .stage {
+        margin-left: 5%;
+        margin-top: -40%;
+        p {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 70px;
+        }
+    }
+}
+
+
+.btn {
+    width: 280px;
+    height: 43px;
+    border-radius: 50px;
+    border: 1px solid $gold;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-join {
+    background-color: $gold;
+    color: #333;
+}
+.btn-join:hover {
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px $gold, inset 4px 4px 15px 0px #000000, 0px 5px 15px 5px rgba(0, 0, 0, 0);
+    transition: all .7s ease;
+}
+
+.btn-seeall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $gold;
+}
+
+.btn-seeall:hover {
+    -webkit-box-shadow: 5px 5px 5px 0px $gold, inset 4px 4px 15px 0px $gold, 0px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 5px 0px $gold, inset 4px 4px 15px 0px $gold, 0px 5px 15px 5px rgba(0, 0, 0, 0);
+    transition: all .7s ease;
+}
+
+.description {
+    background: $bg;
+    margin-top: 100px;
+    .description-item {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 170px;
+        padding: 0 15px;
+        &__img {
+            width: 860px;
+            height: 564px;
+            background: (url(../main-f1.jpg));
+        }
+        &__img2 {
+            width: 860px;
+            height: 564px;
+            background: (url(../main-f2.jpg));
+        }
+        &__img3 {
+            width: 860px;
+            height: 564px;
+            background: (url(../main-f3.jpg));
+        }
+        .description-block {
+            max-width: 578px;
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            &__title {
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 50px;
+            }
+            &__text {
+                margin: 22px 0;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+        @include media-screen-tablet {
+            &__img {
+                display: none;
+            }
+            &__img2 {
+                display: none;
+            }
+            &__img3 {
+                display: none;
+            }
+        }
+    }
+}
+
+.question {
+    max-width: 1170px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-weight: 500;
+    margin: 0 auto;
+    padding: 100px 15px;
+
+    &__title {
+        font-size: 27px;
+        line-height: 33px;
+    }
+    &__update {
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: underline;
+        color: #807F84;
+        padding-top: 20px;
+        margin-bottom: 40px;
+    }
+    &__ask {
+        padding-top: 20px;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: underline;
+    }
+    &__answer {
+        padding-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}

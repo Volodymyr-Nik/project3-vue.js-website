@@ -1,0 +1,156 @@
+footer {
+    background: #01000A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footer-links {
+        border-top: 1px solid #fff;
+        width: 1170px;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 30px;
+        &__link {
+            display: flex;
+            flex-direction: column;
+            a {
+                padding: 20px 15px 0px 0px;
+            }
+            a:hover {
+                color: $gold;
+                text-decoration: underline;
+                transition: all .7s ease;
+            }
+        }
+        .social-link {
+            width: 165px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            a svg:hover {
+                path {
+                    fill: $gold;
+                    transition: all .7s ease;
+                }
+            }
+        }
+    }
+    @include media-screen-medium {
+        .footer-links {
+            max-width: 650px;
+            justify-content: center;
+            .add-info {
+                display: none;
+            }
+        }
+    }
+    @include media-screen-small {
+        .footer-links {
+            max-width: 330px;
+            align-items: center;
+            justify-content: center;
+            &__link:last-child {
+                display: none;
+            }
+        }
+    }
+
+    .footer-sing {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 1px solid #fff;
+        width: 1170px;
+        margin-top: 50px;
+        padding: 30px 0;
+        .sign-block {
+            display: flex;
+            flex-direction: column;
+            &__title {
+                font-weight: 18px;
+                line-height: 9px;
+                padding-bottom: 20px;
+            }
+            &__text {
+                font-weight: 14px;
+                line-height: 24px;
+                padding-bottom: 20px;
+            }
+        }
+        .email-form {
+            display: flex;
+            width: 354px;
+            height: 37px;
+            
+            &__input {
+                width: 210px;
+                height: 37px;
+                padding-left: 13px;
+                border: none;
+                color: #333;
+            }
+            &__input:focus {
+                outline: none;
+            }
+            &__btn {
+                width: 144px;
+                height: 37px;
+                border: none;
+                background: $gold;
+                color: #333;
+                cursor: pointer;
+            }
+            &__btn:hover {
+                -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 5px 15px 5px rgba(0, 0, 0, 0);
+                box-shadow: 5px 5px 5px 0px $gold, inset 4px 4px 15px 0px #000000, 0px 5px 15px 5px rgba(0, 0, 0, 0);
+                transition: all .7s ease;
+            }
+        }
+    }
+    @include media-screen-medium {
+        .footer-sing {
+            padding: 30px 10px;
+            width: 650px;
+            justify-content: center;
+            .support {
+                display: none;
+            }
+        }
+    }
+    @include media-screen-small {
+        .footer-sing {
+            width: 320px;
+            justify-content: center;
+            .sign-block {
+                width: 270px;
+            }
+            .email-form__input {
+                width: 150px;
+            }
+            .email-form__btn {
+                width: 100px;
+            }
+        }
+    }
+    .arr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        .arr-up {
+            width: 70px;
+            height: 40px;
+            border: 1px solid #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .arr-up:hover {
+            border: 1px solid $gold;
+            svg path {
+                fill: $gold;
+                transition: all .7s ease;
+            }
+        }
+    }
+}
