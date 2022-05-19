@@ -1,12 +1,18 @@
 <template>
   <div class="swiper-bg">
     <swiper
-      :modules="[EffectFade]"
+      :modules="[EffectFade, Autoplay, Pagination]"
       effect="fade"
       :slides-per-view="1"
       :space-between="50"
       @swiper="onSwiper"
       @slideChange="onSlideChange"
+      :pagination="{ type: 'progressbar', clickable: true }"
+      :autoplay="{
+        delay: 5000,
+        stopOnLastSlide: false,
+        disableOnInteraction: true,
+      }"
     >
       <swiper-slide
         ><img src="../assets/bg_swiper/f1.jpg" alt="img1"
@@ -133,12 +139,14 @@
 </template>
 
 <script>
-import { EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/vue";
-
+import { EffectFade, Autoplay, Pagination } from "swiper";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
+import "swiper/scss/autoplay";
+import "swiper/scss/pagination";
+
 
 export default {
   name: "v-main",
@@ -157,6 +165,8 @@ export default {
       onSwiper,
       onSlideChange,
       EffectFade,
+      Autoplay,
+      Pagination,
     };
   },
 };

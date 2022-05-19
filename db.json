@@ -1,19 +1,334 @@
 {
-  "posts": [
+  "shows": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "image": "/performances/blog1.jpg",
+      "name": "Alian Side",
+      "date": "Thursday 04 June 2022",
+      "place": "The Workers Club, Fitzroy, VIC, Australia",
+      "article": "S1",
+      "quantity": 1,
+      "available": true,
+      "category": "Blog",
+      "price": 350.50
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "image": "/performances/blog2.jpg",
+      "name": "Justin Place",
+      "date": "Friday 16 July 2022",
+      "place": "DownTown, Victoria, VIC, Australia",
+      "article": "S2",
+      "quantity": 1,
+      "available": true,
+      "category": "Blog",
+      "price": 170.00
+    },
+    {
+      "image": "/performances/blog3.jpg",
+      "name": "David River",
+      "date": "Saturday 11 August 2022",
+      "place": "Oasis, Victoria, VIC, Australia",
+      "article": "S3",
+      "quantity": 1,
+      "available": true,
+      "category": "Blog",
+      "price": 420.85
+    },
+    {
+      "image": "/performances/blog4.jpg",
+      "name": "John Light",
+      "date": "Thursday 22 August 2022",
+      "place": "The Old Club, Melbourne, GBM, Australia",
+      "article": "S4",
+      "quantity": 1,
+      "available": true,
+      "category": "Blog",
+      "price": 180.20
+    },
+    {
+      "image": "/performances/blog5.jpg",
+      "name": "Adam Fetterman",
+      "date": "Thursday 03 September 2022",
+      "place": "Power Woter Club, Hobart, YHA, Australia",
+      "article": "S5",
+      "quantity": 1,
+      "available": true,
+      "category": "Blog",
+      "price": 199.99
+    },
+    {
+      "image": "/performances/blog6.jpg",
+      "name": "Anna Madeo",
+      "date": "Wednesday 15 October 2022",
+      "place": "Barbara Lake, Perth, WA, Australia",
+      "article": "S6",
+      "quantity": 1,
+      "available": true,
+      "category": "Blog",
+      "price": 426.75
+    },
+    {
+      "image": "/performances/cas1.jpg",
+      "name": "Gold Knight",
+      "date": "Thursday 04 June 2022",
+      "place": "The Workers Club, Fitzroy, VIC, Australia",
+      "article": "S7",
+      "quantity": 1,
+      "available": true,
+      "category": "Casino",
+      "price": 350.50
+    },
+    {
+      "image": "/performances/cas2.jpg",
+      "name": "Alladin Place",
+      "date": "Friday 16 July 2022",
+      "place": "DownTown, Victoria, VIC, Australia",
+      "article": "S8",
+      "quantity": 1,
+      "available": true,
+      "category": "Casino",
+      "price": 170.00
+    },
+    {
+      "image": "/performances/cas3.jpg",
+      "name": "Golden House",
+      "date": "Saturday 11 August 2022",
+      "place": "Oasis, Victoria, VIC, Australia",
+      "article": "S9",
+      "quantity": 1,
+      "available": true,
+      "category": "Casino",
+      "price": 420.85
+    },
+    {
+      "image": "/performances/cas4.jpg",
+      "name": "Sweet Dreams",
+      "date": "Thursday 22 August 2022",
+      "place": "The Old Club, Melbourne, GBM, Australia",
+      "article": "S10",
+      "quantity": 1,
+      "available": true,
+      "category": "Casino",
+      "price": 180.20
+    },
+    {
+      "image": "/performances/cas5.jpg",
+      "name": "LackyStrice",
+      "date": "Thursday 03 September 2022",
+      "place": "Power Woter Club, Hobart, YHA, Australia",
+      "article": "S11",
+      "quantity": 1,
+      "available": true,
+      "category": "Casino",
+      "price": 199.99
+    },
+    {
+      "image": "/performances/cas6.jpg",
+      "name": "Casino Royale",
+      "date": "Wednesday 15 October 2022",
+      "place": "Barbara Lake, Perth, WA, Australia",
+      "article": "S12",
+      "quantity": 1,
+      "available": true,
+      "category": "Casino",
+      "price": 426.75
+    },
+    {
+      "image": "/performances/cnc1.jpg",
+      "name": "Alian Side",
+      "date": "Thursday 04 June 2022",
+      "place": "The Workers Club, Fitzroy, VIC, Australia",
+      "article": "S13",
+      "quantity": 1,
+      "available": true,
+      "category": "Concert",
+      "price": 350.50
+    },
+    {
+      "image": "/performances/cnc2.jpg",
+      "name": "Justin Place",
+      "date": "Friday 16 July 2022",
+      "place": "DownTown, Victoria, VIC, Australia",
+      "article": "S14",
+      "quantity": 1,
+      "available": true,
+      "category": "Concert",
+      "price": 170.00
+    },
+    {
+      "image": "/performances/cnc3.jpg",
+      "name": "David River",
+      "date": "Saturday 11 August 2022",
+      "place": "Oasis, Victoria, VIC, Australia",
+      "article": "S15",
+      "quantity": 1,
+      "available": true,
+      "category": "Concert",
+      "price": 420.85
+    },
+    {
+      "image": "/performances/cnc4.jpg",
+      "name": "John Light",
+      "date": "Thursday 22 August 2022",
+      "place": "The Old Club, Melbourne, GBM, Australia",
+      "article": "S16",
+      "quantity": 1,
+      "available": true,
+      "category": "Concert",
+      "price": 180.20
+    },
+    {
+      "image": "/performances/cnc5.jpg",
+      "name": "Adam Fetterman",
+      "date": "Thursday 03 September 2022",
+      "place": "Power Woter Club, Hobart, YHA, Australia",
+      "article": "S17",
+      "quantity": 1,
+      "available": true,
+      "category": "Concert",
+      "price": 199.99
+    },
+    {
+      "image": "/performances/cnc6.jpg",
+      "name": "Anna Madeo",
+      "date": "Wednesday 15 October 2022",
+      "place": "Barbara Lake, Perth, WA, Australia",
+      "article": "S18",
+      "quantity": 1,
+      "available": true,
+      "category": "Concert",
+      "price": 426.75
+    },
+    {
+      "image": "/performances/theatre1.jpg",
+      "name": "Gold Knight",
+      "date": "Thursday 04 June 2022",
+      "place": "The Workers Club, Fitzroy, VIC, Australia",
+      "article": "S19",
+      "quantity": 1,
+      "available": true,
+      "category": "Theatre",
+      "price": 350.50
+    },
+    {
+      "image": "/performances/theatre2.jpg",
+      "name": "Alladin Place",
+      "date": "Friday 16 July 2022",
+      "place": "DownTown, Victoria, VIC, Australia",
+      "article": "S20",
+      "quantity": 1,
+      "available": true,
+      "category": "Theatre",
+      "price": 170.00
+    },
+    {
+      "image": "/performances/theatre3.jpg",
+      "name": "Golden House",
+      "date": "Saturday 11 August 2022",
+      "place": "Oasis, Victoria, VIC, Australia",
+      "article": "S21",
+      "quantity": 1,
+      "available": true,
+      "category": "Theatre",
+      "price": 420.85
+    },
+    {
+      "image": "/performances/theatre4.jpg",
+      "name": "Sweet Dreams",
+      "date": "Thursday 22 August 2022",
+      "place": "The Old Club, Melbourne, GBM, Australia",
+      "article": "S22",
+      "quantity": 1,
+      "available": true,
+      "category": "Theatre",
+      "price": 180.20
+    },
+    {
+      "image": "/performances/theatre5.jpg",
+      "name": "LackyStrice",
+      "date": "Thursday 03 September 2022",
+      "place": "Power Woter Club, Hobart, YHA, Australia",
+      "article": "S23",
+      "quantity": 1,
+      "available": true,
+      "category": "Theatre",
+      "price": 199.99
+    },
+    {
+      "image": "/performances/theatre6.jpg",
+      "name": "Casino Royale",
+      "date": "Wednesday 15 October 2022",
+      "place": "Barbara Lake, Perth, WA, Australia",
+      "article": "S24",
+      "quantity": 1,
+      "available": true,
+      "category": "Theatre",
+      "price": 426.75
+    },
+    {
+      "image": "/performances/tr1.jpg",
+      "name": "Alian Side",
+      "date": "Thursday 04 June 2022",
+      "place": "The Workers Club, Fitzroy, VIC, Australia",
+      "article": "S25",
+      "quantity": 1,
+      "available": true,
+      "category": "Blog",
+      "price": 350.50
+    },
+    {
+      "image": "/performances/tr2.jpg",
+      "name": "Justin Place",
+      "date": "Friday 16 July 2022",
+      "place": "DownTown, Victoria, VIC, Australia",
+      "article": "S26",
+      "quantity": 1,
+      "available": true,
+      "category": "Festivals",
+      "price": 170.00
+    },
+    {
+      "image": "/performances/tr3.jpg",
+      "name": "David River",
+      "date": "Saturday 11 August 2022",
+      "place": "Oasis, Victoria, VIC, Australia",
+      "article": "S27",
+      "quantity": 1,
+      "available": true,
+      "category": "Festivals",
+      "price": 420.85
+    },
+    {
+      "image": "/performances/tr4.jpg",
+      "name": "John Light",
+      "date": "Thursday 22 August 2022",
+      "place": "The Old Club, Melbourne, GBM, Australia",
+      "article": "S28",
+      "quantity": 1,
+      "available": true,
+      "category": "Festivals",
+      "price": 180.20
+    },
+    {
+      "image": "/performances/tr5.jpg",
+      "name": "Adam Fetterman",
+      "date": "Thursday 03 September 2022",
+      "place": "Power Woter Club, Hobart, YHA, Australia",
+      "article": "S29",
+      "quantity": 1,
+      "available": true,
+      "category": "Festivals",
+      "price": 199.99
+    },
+    {
+      "image": "/performances/tr6.jpg",
+      "name": "Anna Madeo",
+      "date": "Wednesday 15 October 2022",
+      "place": "Barbara Lake, Perth, WA, Australia",
+      "article": "S30",
+      "quantity": 1,
+      "available": true,
+      "category": "Festivals",
+      "price": 426.75
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
