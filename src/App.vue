@@ -1,11 +1,9 @@
 <template>
-  <div id="app">
     <v-header />
     <keep-alive>
     <router-view></router-view>
     </keep-alive>
     <v-footer />
-  </div>
 </template>
 
 <script>
