@@ -73,7 +73,6 @@
 ul{
   display:flex;
   align-items:center;
-  height:50px;
 }
 ul a{
   margin-left:25px;
@@ -85,22 +84,6 @@ ul a:hover{
   transition: all .7s ease;
 }
 @include media-screen-tablet {
-  // .header {
-  //   height: 250px;
-  // }
-  .menu{display:none;}
-  .trigger{
-    display:inline-block;
-    margin:3px;
-    cursor:pointer;
-   }
-   .trigger i{
-     display:block;
-     width:30px;
-     height:6px;
-     margin:4px auto;
-     background:$gold;
-   }
    .show{
      display:block;
      margin-top: -20px;
@@ -118,3 +101,5 @@ ul a:hover{
   }
 }
 }
+
+
